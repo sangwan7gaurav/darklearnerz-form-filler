@@ -1,0 +1,45 @@
+{
+"update_url": "https://clients2.google.com/service/update2/crx",
+
+  "manifest_version": 3,
+  "name": "DarkLearnerz-form-filler",
+  "version": "23.028",
+  "description": "made by IronHawk717",
+  "permissions": ["activeTab", "contextMenus", "scripting"],
+  "host_permissions": ["*://docs.google.com/forms/*", "*://localhost/*"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_title": "Dark"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://docs.google.com/forms/*"],
+      "js": ["main.js"]
+    }
+  ],
+  "commands": {
+    "getAnswers": {
+      "suggested_key": {
+        "default": "Alt+F",
+        "mac": "Alt+F"
+      },
+      "description": "Get Answers"
+    },
+    "toggleAnswers": {
+      "suggested_key": {
+        "default": "Alt+H",
+        "mac": "Alt+H"
+      },
+      "description": "Show/Hide Answers"
+    },
+    "eraseAnswers": {
+      "suggested_key": {
+        "default": "Ctrl+Shift+3",
+        "mac": "Command+Shift+3"
+      },
+      "description": "Erase Answers"
+    }
+  }
+}
