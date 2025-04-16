@@ -1,12 +1,9 @@
-# Chrome Extension for Answering Google Forms with ChatGPT
+1. Clone the repo in ur terminal on desired place:
+      `git clone https://github.com/sangwan7gaurav/darklearnerz-form-filler`
+2. Go to Chrome(I haven't tried firefox tho) nd add extension, then locally add that folder there(need developer mode)
+      
 
-## Overview
 
-This Chrome extension uses ChatGPT to automatically answer both text and image-based questions in Google Forms. 
 
-## Features
 
-- **Text and Image Question Support**: Parses and answers text and image-based questions.
-- **Automatic Form Filling**: Quickly generates answers for all types of questions.
-- **Customizable Responses**: Review and edit answers before submission.
-- **User-Friendly**: Simple and intuitive interface.
+
